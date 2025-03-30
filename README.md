@@ -3,5 +3,5 @@ This project aims to disassemble and reassemble Ristar for the SEGA Mega Drive s
 
 ## Status
 <p align="center">
-	<img src="https://github.com/Not-So-Filter/ristar-md-disasm/blob/main/status/img.svg" width="75%">
+	<img src="https://github.com/Totally-Not-Filter/ristar-md-disasm/blob/main/status/img.svg" width="75%">
 </p>

@@ -2,7 +2,7 @@
 
 vectors:
 	dc.l	stackpointer&$FFFFFF
-	dc.l	0
+	dc.l	$206
 	dc.l	errortrap
 	dc.l	errortrap
 	dc.l	errortrap
@@ -31,7 +31,7 @@ vectors:
 	dc.l	errortrap
 	dc.l	hintjmp&$FFFFFF
 	dc.l	errortrap
-	dc.l	errortrap
+	dc.l	$4284
 	dc.l	errortrap
 	dc.l	errortrap
 	dc.l	errortrap

@@ -1,2 +1,7 @@
-# ristar-md-disasm
- A disassembly of Ristar for the Mega Drive.
+# Ristar Mega Drive Disassembly
+This project aims to disassemble and reassemble Ristar for the SEGA Mega Drive system as accurately as possible while also being a resource for research and documentation.
+
+## Status
+<p align="center">
+	<img src="https://github.com/Not-So-Filter/ristar-md-disasm/blob/main/status/img.svg" width="75%">
+</p>

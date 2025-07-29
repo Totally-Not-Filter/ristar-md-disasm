@@ -17,3 +17,14 @@ REG_RXDATA3:	equ	$A1001D
 REG_S_CTRL3:	equ	$A1001F
 REG_LOCK:		equ	$A14000
 REG_TMSS:		equ	$A14101
+
+; ip addresses
+	rsset	$FFFF0000
+ip_start:	rs.b	0
+	rs.b	$EA70
+hintjmp:	rs.w	1
+	rs.b	$138E
+stack:	rs.b	0
+	rs.b	$200
+ip_end:	rs.b	0
+	rsreset

@@ -1,7 +1,7 @@
-	include	"memory.asm"
+	include	"equates.asm"
 
 vectors:
-	dc.l	stackpointer&$FFFFFF
+	dc.l	stack&$FFFFFF
 	dc.l	$206
 	dc.l	errortrap
 	dc.l	errortrap
@@ -74,8 +74,8 @@ vectors:
 	dc.b	"J               "
 	dc.l	0
 	dc.l	$1FFFFF
-	dc.l	memory_start&$FFFFFF
-	dc.l	(memory_end-1)&$FFFFFF
+	dc.l	ip_start&$FFFFFF
+	dc.l	(ip_end-1)&$FFFFFF
 	dc.l	$20202020
 	dc.l	$20202020
 	dc.l	$20202020
@@ -98,3 +98,6 @@ errortrap:
 	nop
 	nop
 	bra.s	errortrap
+	
+	align	$C8000,255
+	incbin	"sound/string.txt"

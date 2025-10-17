@@ -100,4 +100,4 @@ errortrap:
 	bra.s	errortrap
 	
 	align	$C8000,255
-	incbin	"sound/string.txt"
+	incbin	"sound/ascii.txt"

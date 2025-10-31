@@ -1,5 +1,7 @@
 	include	"equates.asm"
 
+sega_channel = 0
+
 vectors:
 	dc.l	stack&$FFFFFF
 	dc.l	$206
@@ -82,9 +84,13 @@ vectors:
 	dc.l	$20202020
 	dc.l	$20202020
 	dc.l	$20202020
+	if sega_channel
+	dc.b	"Sega channel"
+	else
 	dc.l	$20202020
 	dc.l	$20202020
 	dc.l	$20202020
+	endif
 	dc.l	$20202020
 	dc.l	$20202020
 	dc.l	$20202020
